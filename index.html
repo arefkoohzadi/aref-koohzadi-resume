@@ -1,7 +1,3 @@
-<!-- ========================= -->
-<!-- FILE: resume-en.html -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,211 +5,453 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aref Koohzadihikooei - Resume</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 950px;
+      font-family: 'Inter', sans-serif;
+      background: #f3f5f7;
+      color: #1f2937;
+      line-height: 1.8;
+      padding: 40px 20px;
+    }
+
+    .resume {
+      max-width: 1100px;
       margin: auto;
-      padding: 30px;
-      color: #333;
-      background: #fff;
+      background: white;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
     }
 
-    header {
-      display: flex;
-      align-items: center;
-      border-bottom: 3px solid #007acc;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+    .sidebar {
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: white;
+      padding: 40px 28px;
     }
 
-    .photo {
-      width: 130px;
-      height: 130px;
+    .main {
+      padding: 45px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 25px;
-      border: 3px solid #007acc;
+      border: 5px solid rgba(255,255,255,0.15);
+      margin-bottom: 18px;
     }
 
-    h1 {
-      color: #007acc;
-      margin: 0;
-      font-size: 36px;
+    .profile h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.4;
     }
 
-    h2 {
-      color: #007acc;
-      margin-top: 35px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+    .profile p {
+      color: #cbd5e1;
+      font-size: 15px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
+    .sidebar-section {
+      margin-bottom: 35px;
     }
 
-    td {
-      padding: 8px 10px;
-      vertical-align: top;
+    .sidebar-section h2 {
+      font-size: 17px;
+      margin-bottom: 16px;
+      color: #38bdf8;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 8px;
     }
 
-    ul {
-      margin-top: 10px;
+    .contact-item {
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #e5e7eb;
+      word-break: break-word;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #007acc;
+    .contact-item a {
+      color: #e5e7eb;
       text-decoration: none;
     }
 
-    .contact p {
-      margin: 5px 0;
+    .skill {
+      margin-bottom: 14px;
     }
 
-    .small {
-      color: #666;
+    .skill-title {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #f9fafb;
     }
+
+    .skill-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      border-radius: 20px;
+    }
+
+    .section {
+      margin-bottom: 42px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      color: #0f172a;
+      margin-bottom: 18px;
+      position: relative;
+      padding-left: 14px;
+    }
+
+    .section h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 5px;
+      height: 28px;
+      border-radius: 10px;
+      background: #0ea5e9;
+    }
+
+    .summary {
+      font-size: 15px;
+      color: #374151;
+      text-align: justify;
+    }
+
+    .job {
+      margin-bottom: 28px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .job-date {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .company {
+      color: #4b5563;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .education-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .education-box h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .languages li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .languages li:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 900px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      .main {
+        padding: 30px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .resume {
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="myPic.png" alt="Profile Photo" class="photo" />
+  <div class="resume">
 
-    <div>
-      <h1>Aref Koohzadihikooei</h1>
+    <aside class="sidebar">
 
-      <div class="contact">
-        <p>📧 aref.koohzadi@gmail.com</p>
+      <div class="profile">
+        <img src="myPic.png" alt="Aref Koohzadihikooei" />
+
+        <h1>
+          Aref Koohzadihikooei
+        </h1>
 
         <p>
-          🔗
-          <a href="https://www.linkedin.com/in/aref-koohzadi/">LinkedIn</a>
-          |
-          <a href="https://github.com/arefkoohzadi">GitHub</a>
+          Front-End & Slot Game Developer
         </p>
       </div>
-    </div>
-  </header>
 
-  <section>
-    <h2>🎯 Professional Summary</h2>
+      <div class="sidebar-section">
+        <h2>Contact</h2>
 
-    <p>
-      Front-End and Slot Game Developer with more than 6 years of experience developing high-performance web-based slot games and interactive applications using TypeScript, JavaScript, PixiJS, and Vue.js.
-      Delivered 30+ real-money slot games for international online casino platforms.
-      Experienced in UI architecture, animation systems, reusable component design, and browser performance optimization.
-      Strong understanding of modern front-end workflows, component-based development, and collaborative Agile environments.
-      Background in Numerical Analysis with strong problem-solving and mathematical modeling skills using MATLAB.
-    </p>
-  </section>
+        <div class="contact-item">
+          📧 aref.koohzadi@gmail.com
+        </div>
 
-  <section>
-    <h2>🛠 Technical Skills</h2>
+        <div class="contact-item">
+          🔗
+          <a href="https://github.com/arefkoohzadi">
+            github.com/arefkoohzadi
+          </a>
+        </div>
 
-    <table>
-      <tr>
-        <td><strong>Languages:</strong></td>
-        <td>TypeScript, JavaScript, HTML5, CSS3</td>
-      </tr>
+        <div class="contact-item">
+          💼
+          <a href="https://www.linkedin.com/in/aref-koohzadi/">
+            linkedin.com/in/aref-koohzadi
+          </a>
+        </div>
+      </div>
 
-      <tr>
-        <td><strong>Frameworks & Libraries:</strong></td>
-        <td>Vue.js, PixiJS, GSAP, WebGL, Spine Animation</td>
-      </tr>
+      <div class="sidebar-section">
+        <h2>Skills</h2>
 
-      <tr>
-        <td><strong>Tools & Platforms:</strong></td>
-        <td>Git, GitHub, VS Code, Jira</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">TypeScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>Development Concepts:</strong></td>
-        <td>Component-Based Architecture, SPA Development, Responsive UI, Performance Optimization</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">JavaScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>Workflow:</strong></td>
-        <td>Agile, Scrum, Team Collaboration</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">Vue.js</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>Other Skills:</strong></td>
-        <td>MATLAB, Numerical Methods, Asset Integration</td>
-      </tr>
-    </table>
-  </section>
+        <div class="skill">
+          <div class="skill-title">PixiJS</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-  <section>
-    <h2>💼 Professional Experience</h2>
+        <div class="skill">
+          <div class="skill-title">GSAP & Animation</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%"></div>
+          </div>
+        </div>
 
-    <p>
-      <strong>Boomerang Studios — Front-End & Slot Game Developer</strong><br />
-      📍 Remote (Australia-based) | 🗓 Oct 2020 – May 2026
-    </p>
+        <div class="skill">
+          <div class="skill-title">HTML / CSS</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
 
-    <ul>
-      <li>Developed and launched more than 30 real-money slot games for international online casino platforms</li>
+      <div class="sidebar-section">
+        <h2>Technologies</h2>
 
-      <li>Built reusable front-end systems and game components using TypeScript, JavaScript, PixiJS, and Vue.js</li>
+        <div class="contact-item">• WebGL</div>
+        <div class="contact-item">• Spine Animation</div>
+        <div class="contact-item">• Git & GitHub</div>
+        <div class="contact-item">• VS Code</div>
+        <div class="contact-item">• Jira</div>
+        <div class="contact-item">• MATLAB</div>
+        <div class="contact-item">• Agile / Scrum</div>
+      </div>
 
-      <li>Implemented responsive and interactive user interfaces for internal company tools and front-end features</li>
+    </aside>
 
-      <li>Optimized rendering performance for desktop and mobile browsers</li>
+    <main class="main">
 
-      <li>Collaborated closely with designers, artists, animators, backend developers, and QA teams</li>
+      <section class="section">
+        <h2>Professional Summary</h2>
 
-      <li>Created debugging and animation preview tools to improve development workflow</li>
+        <p class="summary">
+          Front-End and Slot Game Developer with more than 6 years of experience developing high-performance web-based slot games and interactive applications using TypeScript, JavaScript, PixiJS, and Vue.js.
+          Delivered more than 30 real-money slot games for international online casino platforms.
+          Experienced in UI architecture, animation systems, reusable component design, browser performance optimization, and modern front-end workflows.
+          Strong background in Numerical Analysis with problem-solving and mathematical modeling skills using MATLAB.
+        </p>
+      </section>
 
-      <li>Participated in code reviews, bug fixing, and feature implementation in Agile development cycles</li>
-    </ul>
-  </section>
+      <section class="section">
+        <h2>Professional Experience</h2>
 
-  <section>
-    <h2>🎓 Education</h2>
+        <div class="job">
 
-    <p>
-      <strong>University of Mazandaran</strong><br />
-      Master of Science (M.Sc.) in Numerical Analysis<br />
-      📍 Iran | 🗓 Sep 2013 – Aug 2016
-    </p>
-  </section>
+          <div class="job-header">
+            <div class="job-title">
+              Front-End & Slot Game Developer
+            </div>
 
-  <section>
-    <h2>🌐 Languages</h2>
+            <div class="job-date">
+              2020 — 2026
+            </div>
+          </div>
 
-    <ul>
-      <li>Persian — Native</li>
-      <li>English — Intermediate (Preparing for IELTS – Target Score: 6.0)</li>
-    </ul>
-  </section>
+          <div class="company">
+            Boomerang Studios — Remote
+          </div>
 
-  <section>
-    <h2>📂 Portfolio & Links</h2>
+          <ul>
+            <li>
+              Developed and launched more than 30 real-money slot games for international online casino platforms
+            </li>
 
-    <p>
-      GitHub:
-      <a href="https://github.com/arefkoohzadi">
-        github.com/arefkoohzadi
-      </a>
-    </p>
+            <li>
+              Built reusable front-end systems and interactive game components using TypeScript, PixiJS, and Vue.js
+            </li>
 
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/aref-koohzadi/">
-        linkedin.com/in/aref-koohzadi
-      </a>
-    </p>
-  </section>
+            <li>
+              Implemented responsive and user-friendly interfaces for internal company tools and front-end features
+            </li>
+
+            <li>
+              Optimized rendering performance for desktop and mobile browsers
+            </li>
+
+            <li>
+              Collaborated closely with artists, animators, designers, backend developers, and QA teams
+            </li>
+
+            <li>
+              Created debugging and animation preview tools to improve development workflow
+            </li>
+
+            <li>
+              Participated in code reviews, bug fixing, and feature implementation within Agile development cycles
+            </li>
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-box">
+
+          <h3>
+            University of Mazandaran
+          </h3>
+
+          <p>
+            Master of Science (M.Sc.) in Numerical Analysis
+          </p>
+
+          <p>
+            Iran | 2013 — 2016
+          </p>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+
+        <ul class="languages">
+          <li>
+            Persian — Native
+          </li>
+
+          <li>
+            English — Intermediate (Preparing for IELTS)
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
 
 </body>
 </html>
