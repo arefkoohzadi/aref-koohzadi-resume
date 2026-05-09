@@ -1,7 +1,3 @@
-<!-- ========================= -->
-<!-- FILE: resume-fa.html -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -9,188 +5,445 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>رزومه عارف کوهزادی</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Tahoma, sans-serif;
-      line-height: 2;
-      max-width: 950px;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f3f5f7;
+      color: #1f2937;
+      line-height: 1.9;
+      padding: 40px 20px;
+    }
+
+    .resume {
+      max-width: 1100px;
       margin: auto;
-      padding: 30px;
-      color: #333;
-      background: #fff;
+      background: white;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
     }
 
-    header {
-      display: flex;
-      align-items: center;
-      border-bottom: 3px solid #007acc;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+    .sidebar {
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: white;
+      padding: 40px 28px;
     }
 
-    .photo {
-      width: 130px;
-      height: 130px;
+    .main {
+      padding: 45px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      margin-left: 25px;
-      border: 3px solid #007acc;
+      border: 5px solid rgba(255,255,255,0.15);
+      margin-bottom: 18px;
     }
 
-    h1 {
-      color: #007acc;
-      margin: 0;
-      font-size: 34px;
-    }
-
-    h2 {
-      color: #007acc;
-      margin-top: 35px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    td {
-      padding: 8px 10px;
-      vertical-align: top;
-    }
-
-    ul {
-      margin-top: 10px;
-    }
-
-    li {
+    .profile h1 {
+      font-size: 30px;
+      font-weight: 800;
       margin-bottom: 8px;
     }
 
-    a {
-      color: #007acc;
+    .profile p {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 35px;
+    }
+
+    .sidebar-section h2 {
+      font-size: 17px;
+      margin-bottom: 16px;
+      color: #38bdf8;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 8px;
+    }
+
+    .contact-item {
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #e5e7eb;
+      word-break: break-word;
+    }
+
+    .contact-item a {
+      color: #e5e7eb;
       text-decoration: none;
     }
 
-    .contact p {
-      margin: 5px 0;
+    .skill {
+      margin-bottom: 14px;
+    }
+
+    .skill-title {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #f9fafb;
+    }
+
+    .skill-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      border-radius: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      color: #0f172a;
+      margin-bottom: 18px;
+      position: relative;
+      padding-right: 14px;
+    }
+
+    .section h2::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 6px;
+      width: 5px;
+      height: 28px;
+      border-radius: 10px;
+      background: #0ea5e9;
+    }
+
+    .summary {
+      font-size: 15px;
+      color: #374151;
+      text-align: justify;
+    }
+
+    .job {
+      margin-bottom: 28px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .job-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .job-date {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .company {
+      color: #4b5563;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-right: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .education-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .education-box h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .languages li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .languages li:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 900px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      .main {
+        padding: 30px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .resume {
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="myPic.png" alt="Profile Photo" class="photo" />
+  <div class="resume">
 
-    <div>
-      <h1>عارف کوهزادی</h1>
+    <aside class="sidebar">
 
-      <div class="contact">
-        <p>📧 aref.koohzadi@gmail.com</p>
+      <div class="profile">
+        <img src="myPic.png" alt="Aref Koohzadi" />
+
+        <h1>عارف کوهزادی</h1>
 
         <p>
-          🔗
-          <a href="https://www.linkedin.com/in/aref-koohzadi/">LinkedIn</a>
-          |
-          <a href="https://github.com/arefkoohzadi">GitHub</a>
+          Front-End & Slot Game Developer
         </p>
       </div>
-    </div>
-  </header>
 
-  <section>
-    <h2>🎯 خلاصه حرفه‌ای</h2>
+      <div class="sidebar-section">
+        <h2>اطلاعات تماس</h2>
 
-    <p>
-      توسعه‌دهنده فرانت‌اند و بازی‌های اسلات با بیش از 6 سال تجربه در توسعه بازی‌های آنلاین و اپلیکیشن‌های تعاملی تحت وب با استفاده از TypeScript، JavaScript، PixiJS و Vue.js.
-      دارای تجربه انتشار بیش از 30 بازی اسلات واقعی برای پلتفرم‌های بین‌المللی.
-      مسلط به طراحی رابط کاربری، معماری فرانت‌اند، سیستم‌های انیمیشن، توسعه کامپوننت‌های reusable و بهینه‌سازی عملکرد در مرورگر.
-      دارای سابقه تحصیلی در تحلیل عددی و مهارت در MATLAB و مدل‌سازی ریاضی.
-    </p>
-  </section>
+        <div class="contact-item">
+          📧 aref.koohzadi@gmail.com
+        </div>
 
-  <section>
-    <h2>🛠 مهارت‌های فنی</h2>
+        <div class="contact-item">
+          🔗
+          <a href="https://github.com/arefkoohzadi">
+            github.com/arefkoohzadi
+          </a>
+        </div>
 
-    <table>
-      <tr>
-        <td><strong>زبان‌ها:</strong></td>
-        <td>TypeScript, JavaScript, HTML5, CSS3</td>
-      </tr>
+        <div class="contact-item">
+          💼
+          <a href="https://www.linkedin.com/in/aref-koohzadi/">
+            linkedin.com/in/aref-koohzadi
+          </a>
+        </div>
+      </div>
 
-      <tr>
-        <td><strong>فریمورک‌ها و کتابخانه‌ها:</strong></td>
-        <td>Vue.js, PixiJS, GSAP, WebGL, Spine Animation</td>
-      </tr>
+      <div class="sidebar-section">
+        <h2>مهارت‌ها</h2>
 
-      <tr>
-        <td><strong>ابزارها:</strong></td>
-        <td>Git, GitHub, VS Code, Jira</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">TypeScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>مفاهیم توسعه:</strong></td>
-        <td>Component-Based Architecture, SPA Development, Responsive UI, Performance Optimization</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">JavaScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>متدولوژی کاری:</strong></td>
-        <td>Agile, Scrum, Team Collaboration</td>
-      </tr>
+        <div class="skill">
+          <div class="skill-title">Vue.js</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%"></div>
+          </div>
+        </div>
 
-      <tr>
-        <td><strong>سایر مهارت‌ها:</strong></td>
-        <td>MATLAB, Numerical Methods, Asset Integration</td>
-      </tr>
-    </table>
-  </section>
+        <div class="skill">
+          <div class="skill-title">PixiJS</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
 
-  <section>
-    <h2>💼 سوابق کاری</h2>
+        <div class="skill">
+          <div class="skill-title">GSAP & Animation</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%"></div>
+          </div>
+        </div>
 
-    <p>
-      <strong>شرکت Boomerang Studios — توسعه‌دهنده فرانت‌اند و بازی‌های اسلات</strong><br />
-      📍 ریموت | 🗓 از اکتبر 2020 تا می 2026
-    </p>
+        <div class="skill">
+          <div class="skill-title">HTML / CSS</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
 
-    <ul>
-      <li>توسعه و انتشار بیش از 30 بازی اسلات برای پلتفرم‌های بین‌المللی کازینو آنلاین</li>
+      <div class="sidebar-section">
+        <h2>تکنولوژی‌ها</h2>
 
-      <li>پیاده‌سازی سیستم‌های فرانت‌اند و کامپوننت‌های reusable با استفاده از TypeScript، PixiJS و Vue.js</li>
+        <div class="contact-item">• WebGL</div>
+        <div class="contact-item">• Spine Animation</div>
+        <div class="contact-item">• Git & GitHub</div>
+        <div class="contact-item">• VS Code</div>
+        <div class="contact-item">• Jira</div>
+        <div class="contact-item">• MATLAB</div>
+        <div class="contact-item">• Agile / Scrum</div>
+      </div>
 
-      <li>طراحی رابط‌های کاربری تعاملی برای ابزارهای داخلی شرکت و قابلیت‌های فرانت‌اند</li>
+    </aside>
 
-      <li>بهینه‌سازی عملکرد بازی‌ها و رابط کاربری در مرورگرهای دسکتاپ و موبایل</li>
+    <main class="main">
 
-      <li>همکاری نزدیک با طراحان، انیماتورها، توسعه‌دهندگان بک‌اند و تیم QA</li>
+      <section class="section">
+        <h2>خلاصه حرفه‌ای</h2>
 
-      <li>ساخت ابزارهای Debug و Preview برای بهبود فرآیند توسعه</li>
+        <p class="summary">
+          توسعه‌دهنده فرانت‌اند و بازی‌های اسلات با بیش از 6 سال تجربه در توسعه بازی‌های آنلاین و اپلیکیشن‌های تعاملی تحت وب با استفاده از TypeScript، JavaScript، PixiJS و Vue.js.
+          دارای تجربه انتشار بیش از 30 بازی اسلات واقعی برای پلتفرم‌های بین‌المللی.
+          مسلط به طراحی رابط کاربری، معماری فرانت‌اند، سیستم‌های انیمیشن، توسعه کامپوننت‌های reusable و بهینه‌سازی عملکرد در مرورگر.
+          دارای سابقه تحصیلی در تحلیل عددی و مهارت در MATLAB و مدل‌سازی ریاضی.
+        </p>
+      </section>
 
-      <li>مشارکت در Code Review، رفع باگ‌ها و توسعه فیچرها در فرآیند Agile</li>
-    </ul>
-  </section>
+      <section class="section">
+        <h2>سوابق کاری</h2>
 
-  <section>
-    <h2>🎓 تحصیلات</h2>
+        <div class="job">
 
-    <p>
-      <strong>دانشگاه مازندران</strong><br />
-      کارشناسی ارشد تحلیل عددی<br />
-      📍 ایران | 🗓 ۱۳۹۲ تا ۱۳۹۵
-    </p>
-  </section>
+          <div class="job-header">
+            <div class="job-title">
+              توسعه‌دهنده فرانت‌اند و بازی‌های اسلات
+            </div>
 
-  <section>
-    <h2>🌐 زبان‌ها</h2>
+            <div class="job-date">
+              2020 — 2026
+            </div>
+          </div>
 
-    <ul>
-      <li>فارسی — زبان مادری</li>
-      <li>انگلیسی — سطح متوسط (در حال آمادگی برای آزمون آیلتس)</li>
-    </ul>
-  </section>
+          <div class="company">
+            Boomerang Studios — Remote
+          </div>
+
+          <ul>
+            <li>
+              توسعه و انتشار بیش از 30 بازی اسلات برای پلتفرم‌های بین‌المللی کازینو آنلاین
+            </li>
+
+            <li>
+              پیاده‌سازی سیستم‌های فرانت‌اند و کامپوننت‌های reusable با استفاده از TypeScript، PixiJS و Vue.js
+            </li>
+
+            <li>
+              طراحی رابط‌های کاربری تعاملی برای ابزارهای داخلی شرکت و قابلیت‌های فرانت‌اند
+            </li>
+
+            <li>
+              بهینه‌سازی عملکرد بازی‌ها و رابط کاربری در مرورگرهای دسکتاپ و موبایل
+            </li>
+
+            <li>
+              همکاری نزدیک با طراحان، انیماتورها، توسعه‌دهندگان بک‌اند و تیم QA
+            </li>
+
+            <li>
+              ساخت ابزارهای Debug و Preview برای بهبود فرآیند توسعه
+            </li>
+
+            <li>
+              مشارکت در Code Review، رفع باگ‌ها و توسعه فیچرها در فرآیند Agile
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>تحصیلات</h2>
+
+        <div class="education-box">
+          <h3>
+            دانشگاه مازندران
+          </h3>
+
+          <p>
+            کارشناسی ارشد تحلیل عددی
+          </p>
+
+          <p>
+            ایران | ۱۳۹۲ تا ۱۳۹۵
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>زبان‌ها</h2>
+
+        <ul class="languages">
+          <li>
+            فارسی — زبان مادری
+          </li>
+
+          <li>
+            انگلیسی — سطح متوسط (در حال آمادگی برای آزمون آیلتس)
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
 
 </body>
 </html>
