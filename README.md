@@ -11,9 +11,9 @@ Front-End & Slot Game Developer
 
 ## 🎯 Professional Summary
 
-Front-End and Slot Game Developer with more than 5 years of experience developing high-performance web-based slot games and interactive applications using TypeScript, JavaScript, PixiJS, and Vue.js.
+Front-End and Slot Game Developer with more than 6 years of experience developing high-performance web-based slot games and interactive applications using TypeScript, JavaScript, PixiJS, and Vue.js.
 
-Delivered 25+ real-money slot games for international online casino platforms.
+Delivered 30+ real-money slot games for international online casino platforms.
 
 Experienced in UI architecture, animation systems, reusable component design, and browser performance optimization.
 
@@ -61,7 +61,7 @@ Background in Numerical Analysis with strong mathematical and problem-solving sk
 📍 Remote (Australia-based)  
 🗓 Oct 2020 – May 2026
 
-- Developed and launched 25+ real-money slot games
+- Developed and launched 30+ real-money slot games
 - Built reusable front-end systems using TypeScript, PixiJS, and Vue.js
 - Implemented responsive and interactive user interfaces
 - Optimized rendering performance across desktop and mobile browsers
