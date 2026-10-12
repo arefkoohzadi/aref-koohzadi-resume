@@ -1,27 +1,28 @@
-# Aref Koohzadihikooei
+# Aref Koohzadi
 
-Front-End & Slot Game Developer
+Full-Stack Developer · Senior Front-End Game Developer
 
-📧 aref.koohzadi@gmail.com
+aref.koohzadi@gmail.com
++98 905 216 6314
 
 - LinkedIn: https://www.linkedin.com/in/aref-koohzadi/
 - GitHub: https://github.com/arefkoohzadi
 
 ---
 
-## 🎯 Professional Summary
+## Professional Summary
 
-Front-End and Slot Game Developer with more than 6 years of experience developing high-performance web-based slot games and interactive applications using TypeScript, JavaScript, PixiJS, and Vue.js.
+TypeScript developer working across web applications and game clients.
 
-Delivered 30+ real-money slot games for international online casino platforms.
+Since April 2026, Full-Stack Developer at Fidarkaran, building Vue.js and TypeScript interfaces and Node.js and Express APIs.
 
-Experienced in UI architecture, animation systems, reusable component design, and browser performance optimization.
+From October 2020 to February 2026, Senior Front-End Game Developer at Boomerang Studios. Shipped 30+ slot games and multiple Keno games for Light & Wonder, SG Digital, Lightning Box, and GamesLab.
 
-Background in Numerical Analysis with strong mathematical and problem-solving skills using MATLAB.
+Background in Numerical Analysis, with mathematical modeling in MATLAB.
 
 ---
 
-## 🛠 Technical Skills
+## Technical Skills
 
 ### Languages
 - TypeScript
@@ -31,8 +32,9 @@ Background in Numerical Analysis with strong mathematical and problem-solving sk
 
 ### Frameworks & Libraries
 - Vue.js
+- Node.js
+- Express
 - PixiJS
-- GSAP
 - WebGL
 - Spine Animation
 
@@ -44,7 +46,6 @@ Background in Numerical Analysis with strong mathematical and problem-solving sk
 
 ### Development Concepts
 - Component-Based Architecture
-- SPA Development
 - Responsive UI
 - Performance Optimization
 
@@ -55,15 +56,23 @@ Background in Numerical Analysis with strong mathematical and problem-solving sk
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
-### Boomerang Studios — Front-End & Slot Game Developer
-📍 Remote (Australia-based)  
-🗓 Oct 2020 – May 2026
+### Fidarkaran — Full-Stack Developer
+Apr 2026 – Present
 
-- Developed and launched 30+ real-money slot games
+- Develop and maintain APIs and backend services with Node.js and Express
+- Build interfaces with Vue.js and TypeScript
+- Take part in front-end and back-end architecture for the project
+- Work in an Agile team on implementation, review, and delivery
+
+### Boomerang Studios — Senior Front-End Game Developer
+Remote (Australia-based)
+Oct 2020 – Feb 2026
+
+- Developed, optimized, and launched 30+ slot games and multiple Keno games for Light & Wonder, SG Digital, Lightning Box, and GamesLab
 - Built reusable front-end systems using TypeScript, PixiJS, and Vue.js
-- Implemented responsive and interactive user interfaces
+- Implemented responsive and interactive user interfaces for internal tools
 - Optimized rendering performance across desktop and mobile browsers
 - Collaborated with artists, backend developers, designers, and QA teams
 - Created debugging and animation preview tools
@@ -71,24 +80,24 @@ Background in Numerical Analysis with strong mathematical and problem-solving sk
 
 ---
 
-## 🎓 Education
+## Education
 
 ### University of Mazandaran
 Master of Science (M.Sc.) in Numerical Analysis
 
-📍 Iran  
-🗓 Sep 2013 – Aug 2016
+Iran
+Sep 2013 – Aug 2016
 
 ---
 
-## 🌐 Languages
+## Languages
 
 - Persian — Native
-- English — Intermediate (Preparing for IELTS)
+- English — Professional Working Proficiency
 
 ---
 
-## 📂 Links
+## Links
 
 - GitHub: https://github.com/arefkoohzadi
 - LinkedIn: https://www.linkedin.com/in/aref-koohzadi/
