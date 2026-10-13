@@ -14,7 +14,7 @@ aref.koohzadi@gmail.com
 
 TypeScript developer working across web applications and game clients.
 
-Since April 2026, Full-Stack Developer at Fidarkaran, building Vue.js and TypeScript interfaces and Node.js and Express APIs.
+Since April 2026, Full-Stack Developer at Fidarkaran. Shipped Vue 3 and JavaScript interface work on an industrial equipment monitoring dashboard, plus targeted Node.js and Express API changes.
 
 From October 2020 to February 2026, Senior Front-End Game Developer at Boomerang Studios. Shipped 30+ slot games and multiple Keno games for Light & Wonder, SG Digital, Lightning Box, and GamesLab.
 
@@ -31,7 +31,11 @@ Background in Numerical Analysis, with mathematical modeling in MATLAB.
 - CSS3
 
 ### Frameworks & Libraries
-- Vue.js
+- Vue 3
+- Vite
+- Vue Router
+- Tailwind CSS
+- Chart.js
 - Node.js
 - Express
 - PixiJS
@@ -61,10 +65,11 @@ Background in Numerical Analysis, with mathematical modeling in MATLAB.
 ### Fidarkaran — Full-Stack Developer
 Apr 2026 – Present
 
-- Develop and maintain APIs and backend services with Node.js and Express
-- Build interfaces with Vue.js and TypeScript
-- Take part in front-end and back-end architecture for the project
-- Work in an Agile team on implementation, review, and delivery
+- Migrated a production Vue 3 dashboard from Vue CLI 5 to Vite 5 and upgraded Vue from 3.2 to 3.5
+- Replaced Bootstrap, jQuery, and Popper with Tailwind CSS and shared design tokens, including a reusable dropdown
+- Built Chart.js time-series and spectrum controls: fullscreen, zoom, empty states, date range, and cursor readouts
+- Shipped an asset tree with skeleton loading and live status, including the API for that tree, plus Express changes for log pagination, startup when a document database is unavailable, organization name checks, and session-ended messaging
+- Delivered the work in small pull requests: 89 merged between April and October 2026, using Conventional Commits
 
 ### Boomerang Studios — Senior Front-End Game Developer
 Remote (Australia-based)
